@@ -1,0 +1,140 @@
+// app global css in SCSS form
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,
+#q-app {
+    background: #ffffff;
+    color: #000000;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    font-family: Ubuntu, sans-serif;
+    color: inherit;
+    font-weight: 400
+}
+
+.q-drawer {
+    background: #000000 !important;
+    width: 100% !important;
+
+    .q-btn__content {
+        color: #fbc02c !important;
+    }
+
+    .q-icon {
+        color: #fbc02c !important;
+    }
+
+    .q-item__section {
+        font-size: 1.125rem !important;
+        color: black !important;
+
+    }
+}
+
+.drawer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
+    padding-top: 100px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    
+    .q-item-type {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.header-menu {
+
+    .text-black,
+    .q-btn {
+        color: #fbc02c !important;
+        background: #000000 !important;
+    }
+}
+
+.card-actions-btns {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        border-radius: 10px;
+        background: #e0e0e0;
+        color: #000 !important;
+        text-transform: capitalize;
+    }
+
+    a {
+        border-radius: 10px;
+        background: #fbc02c !important;
+        color: #000000 !important;
+        padding: 10px;
+        font-weight: 700;
+    }
+}
+
+.header-nav {
+    .q-btn-item {
+        text-transform: uppercase !important;
+    }
+}
+
+.reviews-cta {
+    .q-btn-item {
+        background: #fbc02c !important;
+        width: min(860px, 92%);
+        height: 64px;
+        border-radius: 16px;
+        text-transform: uppercase !important;
+        font-size: 1.125rem;
+        font-weight: 800;
+        color: #111827 !important;
+    }
+}
+
+// .reviews{
+//     .description{
+//         width: 77%;
+//         margin: 0px auto;
+//         padding: 32px 0px;        
+//     }
+
+// }
+
+@media (max-width: 640px) {
+    .reviews {
+        .description {
+            width: 96%;
+        }
+    }
+
+    .booking-card {
+        border-radius: 3px !important;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .reviews {
+        .description {
+            width: 96% !important;
+        }
+    }
+}
